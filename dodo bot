@@ -1,0 +1,28 @@
+@bot.command('pizza')
+async def pizza(message):
+    await message.send('''
+                       Почему мы так хотим познакомиться? Потому что дальше пицца делает всё сама. Люди видят, что она вкусная, и возвращаются снова. Нам главное первый раз это показать.
+                       
+                       Вообще пицца — очень простая штука, её сложно испортить. Достаточно хороших ингредиентов и правильного теста. Это конструктор, если детали качественные, то и результат будет в порядке.
+                       ''')
+    await message.send('пиццы')
+    with open('images/pizza.jpg', 'rb') as f:
+        picture = discord.File(f)
+    await message.send(file=picture)
+    await message.send('креветки со сладким чили')
+    await message.send('креветки, ананасы, соус сладкий чили, сладкий перец, моцарелла')
+    await message.send('600 рублей')
+
+    with open('images/pizza2.jpg', 'rb') as f:
+        picture = discord.File(f)
+    await message.send(file=picture)
+    await message.send('пепперони')
+    await message.send('свинина с паприкой, чили')
+    await message.send('600 рублей')
+
+    with open('images/pizza3.jpg', 'rb') as f:
+        picture = discord.File(f)
+    await message.send(file=picture)
+    await message.send('Маргарита')
+    await message.send('томаты, листья базилика, моцарелла')
+    await message.send('600 рублей')
